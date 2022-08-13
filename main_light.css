@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arsenal&family=Italiana&family=Stalemate&display=swap');
+
+:root {
+	/* https://mycolor.space/?hex=%23E3E0CF&sub=1 */
+	--lightmode-background: #FDFAEA;
+	--lightmode-element1: #E3E0CF;
+	--lightmode-element2: #97951A;
+	--lightmode-element3: #CAC5A1;
+	--lightmode-element4: #000000;
+
+	/*https://mycolor.space/?hex=%2317171D&sub=1*/
+	--darkmode-background: #17171D;
+	--darkmode-element1: #CEA716;
+	--darkmode-element2: #FFEFCA;
+	--darkmode-element3: #847555;
+	--darkmode-element4: #FFFFFF;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	background: var(--lightmode-background);
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+.base {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+
+
+.base > h1 {
+	position: absolute;
+	margin: 0.5em auto auto 0.7em;
+	opacity: 0.45;
+
+	color: var(--lightmode-element2);
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Abril Fatface', sans-serif;
+	font-size: 20em;
+	line-height: 80%;
+
+	/*outline: 2px solid blue;*/
+}
+
+
+
+
+
+header {
+	width: 100vw;
+	height: auto;
+	position: fixed;
+	padding: 1.5em;
+	background: var(--lightmode-background);
+	z-index: 100;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	/*outline: 2px solid red;*/
+}
+
+/* navigation bar  */
+.navbar {
+	width: auto;
+	height: auto;
+	margin-top: 1.5em;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4em;
+
+	/*outline: 2px solid green;*/
+}
+
+.navbar > * {
+	color: var(--lightmode-element4);
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 1.1rem;
+}
+
+
+
+
+
+/* logo */
+.logo h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+
+	font-size: 4em;
+	text-align: center;
+	color: var(--lightmode-element4);
+}
+
+
+
+
+
+/* site slogan and signature images */
+.site-face {
+	width: 65vw;
+	height: 40vh;
+
+	transform: translateY(20em);
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	gap: 15em;
+
+	/*outline: 2px solid red;*/
+}
+
+.site-face-text {
+	width: auto;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	/*outline: 2px solid red;*/
+}
+
+.site-face-text h1 {
+	color: var(--lightmode-element4);
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Abril Fatface', sans-serif;
+	font-size: 7em;
+	line-height: 90%;
+
+	margin: 0;
+}
+
+.site-face-text p {
+	text-align: left;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 1.2em;
+}
+
+.site-face-images {
+	width: 25vw;
+	height: auto;
+	margin: -10em auto auto auto;
+
+	/*outline: 2px solid red;*/
+}
+
+
+
+
+
+.product-profile {
+	width: 55vw;
+	height: 60vh;
+
+	transform: translateY(calc(20em + 30em));
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	position: relative; /* for #idx  */
+
+	/*outline: 2px solid purple;*/
+}
+
+#idx {
+	position: absolute;
+	top: -80%;
+	left: -10%;
+	z-index: -1;
+
+	font-family: 'Italiana', serif;
+	font-size: 30em;
+	color: var(--lightmode-element3);
+	opacity: 0.45;
+}
+
+.product-profile-text {
+	width: 30em;
+	height: auto;
+
+	/*outline: 2px solid green;*/
+}
+
+.product-profile-text > h1 {
+	color: var(--lightmode-element2);
+	font-family: 'Abril Fatface', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+.product-profile-text > p {
+	text-align: left;
+	font-family: 'Arsenal', sans-serif;
+	line-height: 150%;
+}
+
+.buy-btn {
+	font-family: 'Stalemate', cursive;
+	font-size: 2em;
+	text-align: center;
+	color: black;
+
+	width: 4em;
+	height: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	border: 2px solid black;
+	background: var(--lightmode-background);
+	cursor: pointer;
+	transition: all 100ms linear;
+}
+
+.buy-btn:hover {
+	color: var(--lightmode-background);
+	background: black;
+}
+
+.vertical-bar {
+	height: calc(60vh - 20%);
+	background: var(--darkmode-element4);
+	border: 4px solid black;
+	border-radius: 50%;
+}
+
+.product-profile > img {
+	width: 20vw;
+	height: auto;
+	position: relative;
+}
+
+.product-profile > .img-frame {
+	width: 20vw;
+	height: 60vh;
+	position: absolute;
+	top: -5%;
+	right: 0;
+
+	border: 5px solid var(--lightmode-element2);
+}
+
+
+
+
+
+footer {
+	width: 100vw;
+	height: auto;
+	background: var(--lightmode-element3);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	transform: translateY(calc(20em + 20em)); /* to place it at the end of the page after all .product-profile  */
+	padding: 3%;
+}
+
+.footer-arrangement {
+	width: 10vw;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	/*outline: 2px solid yellow;*/
+}
+
+.footer-arrangement > p {
+	font-family: 'Arsenal', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-arrangement > a {
+	font-family: 'Arsenal', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	line-height: 200%;
+	color: black;
+	margin: 2%;
+}

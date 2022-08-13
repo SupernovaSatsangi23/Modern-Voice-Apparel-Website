@@ -1,0 +1,17 @@
++ website introduction page
+
+requirements :
++	logo/site name and image/picture if any
++	any signature or signature images or signature fonts
++	navbar details for their purposes
++	all the details/everything regarding their specifications
++	transparent background image of any object belonging to your business
++	social media handles to anchor in navbar
++	data/statistics for product profile
++	your business products to display on the page
++	footer details
++	links for buy button
+
+product summary :
+
+You are about to buy a 'Home/First/Landing' page for a fashion website. Running an online store/fashion brand on social media requires having a website that introduces your brand to potential customers. This project can be used for any fashion brand. Modern fashion and business requires a sophisticated/minimalistic web design to attract and engage people which is what exactly this webdesign is based on. This project is built in HTML+CSS, no javascript, no animations so that the page loads faster on even slower servers without delays/lags which tends to irritate customers that are there to buy not to hang. This project has 'light' and a 'dark' mode depending on the preference. For it's simple layout, it'll become easier for customers to understand what they are looking for and buying. Fashion industry is growing and at a rapid rate therefore a simple looking website of a brand (which most people have) won't attract more customers and keep the loyal ones. This project here has a modern design that makes it a business magnet and even easier to compete and win, since most fashion brands except a top few don't put efforts into setting an attractive online presence.
